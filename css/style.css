@@ -289,11 +289,15 @@ main {
 
 .formcontacto {
   font-family: "Encode Sans Condensed", sans-serif;
-  background-color: blue;
+  background-color: rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
   border-radius: 10px;
   padding: 24px;
   height: 100%;
+}
+
+.formcontacto input {
+  width: 100%;
 }
 
 .h2contacto {
@@ -355,7 +359,7 @@ textarea {
   text-align: center;
   font-size: 15px;
   height: 100%;
-  background-color: red; /* rgba(0, 0, 0, 0.4); */
+  background-color: rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
   border-radius: 10px;
   padding: 24px;
