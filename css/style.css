@@ -5,7 +5,7 @@
   font-family: "Encode Sans Condensed", sans-serif;
 }
 
-.bodyindex {
+.bodyIndex {
   font-family: "Encode Sans Condensed", sans-serif;
   padding: 90px 0 0;
   margin: 0;
@@ -87,6 +87,7 @@ main {
   display: flex;
   margin-right: 40px;
   list-style: none;
+  height: 80px;
 }
 
 .nav-menu-item {
@@ -98,7 +99,6 @@ main {
 }
 
 .nav-menu-item:hover {
-  transform: scale(1.4);
   transition: 0.5s;
   color: white;
 }
@@ -110,10 +110,17 @@ main {
 
 .nav-menu-link:hover {
   background-color: black;
-  transform: scale(1.2);
+  text-decoration: underline;
   transition: 0.5s;
 }
 
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+.navbar {
+  height: 80px;
+}
 /* por si agrego "controls" a la etiqueta audio:*/
 
 .audioindex {
@@ -129,9 +136,10 @@ main {
   max-width: 600px;
   margin: auto;
   padding: 20px;
-  background-color: white;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 15px;
-  margin-top: 80px;
+  margin-top: 20px;
   display: grid;
   grid: auto / 1fr 2fr;
   column-gap: 20px;
@@ -161,6 +169,17 @@ main {
   transition: 0.5s;
 }
 
+.titulotextocentral {
+  color: white;
+}
+
+.subtitulotextocentral {
+  color: white;
+}
+
+.textocentral {
+  color: white;
+}
 /* APARICION DEL CUADRO CENTRAL DE MANERA PROGRASIVA:*/
 
 #animacioncentral {
@@ -185,7 +204,7 @@ main {
   top: 0;
   left: 0;
   display: flex;
-  margin-top: auto;
+  margin-bottom: 0;
 }
 
 .fotofirmafooter {
