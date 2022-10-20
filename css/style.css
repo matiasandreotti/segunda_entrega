@@ -60,6 +60,12 @@ main {
   text-decoration: none;
 }
 
+/* CHEQUEAR QUE ONDA ESTO PORQUE NO ME CIERRA, ES UN ESTILO SOBRE UNA CLASE QUE YA TRAE BOOSTRAP*/
+.container-fluid {
+  background-color: black;
+}
+/* CHEQUEAR QUE ONDA ESTO PORQUE NO ME CIERRA, ES UN ESTILO SOBRE UNA CLASE QUE YA TRAE BOOSTRAP*/
+
 /* firma  = portfolio fotografico margen izquierdo del nav*/
 
 .firma {
@@ -74,6 +80,7 @@ main {
 .firma:hover {
   transform: scale(1.2);
   transition: 0.5s;
+  color: white;
 }
 
 .nav-menu {
@@ -93,6 +100,7 @@ main {
 .nav-menu-item:hover {
   transform: scale(1.4);
   transition: 0.5s;
+  color: white;
 }
 
 .nav-menu-link {
@@ -282,7 +290,7 @@ main {
   margin: auto;
   padding: 20px;
   border-radius: 15px;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 /* ESTILOS DEL FORMULARIO:*/
