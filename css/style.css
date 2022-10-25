@@ -144,17 +144,6 @@ main {
   margin-top: 60px;
 }
 
-@media screen and (max-width: 480px) {
-  .contenido {
-    grid-template-columns: 1fr;
-    color: red;
-  }
-  .contenedor-centrodepagina {
-    grid-template-columns: 1fr;
-    color: red;
-  }
-}
-
 .contenedor-centrodepagina:hover {
   transform: scale(1.111);
   transition: 0.5s;
@@ -253,19 +242,29 @@ main {
   width: 100%;
   top: 0;
   left: 0;
+  padding: 20px;
   margin-top: 80px;
   background-color: black;
-  display: flex;
-  flex-direction: row;
-  column-gap: 20px;
-  border: 40px solid black;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  justify-content: space-around;
+}
+
+.foto1retratos {
+  width: 400px;
+  display: grid;
+  place-content: center;
+}
+
+.foto2retratos {
+  width: 400px;
+  display: grid;
+  place-content: center;
 }
 
 .fotogringo {
   width: 400px;
-  float: right;
-  margin-right: 30px;
 }
 
 .fotogringo:hover {
@@ -275,8 +274,6 @@ main {
 
 .fotorecibida {
   width: 400px;
-  float: left;
-  margin-left: 30px;
 }
 
 .fotorecibida:hover {
@@ -285,7 +282,7 @@ main {
 }
 
 .textoretratos {
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 300;
   font-family: "Encode Sans Condensed", sans-serif;
   color: white;
@@ -294,6 +291,10 @@ main {
 .textoretratos:hover {
   transform: scale(1.11);
   transition: 0.5s;
+}
+
+.textocentralretratos {
+  width: 400px;
 }
 
 /* ESTILOS DE "contacto.HTML:*/ /* ESTILOS DE "contacto.HTML:*/ /* ESTILOS DE "contacto.HTML:*/ /* ESTILOS DE "contacto.HTML:*/ /* ESTILOS DE "contacto.HTML:*/
@@ -378,12 +379,6 @@ textarea {
   transform: scale(1.1);
   transition: 0.5s;
   cursor: pointer;
-}
-
-@media (max-width: 480px) {
-  form {
-    width: 100%;
-  }
 }
 
 /* ESTILOS DEL MAPA:*/
@@ -544,4 +539,29 @@ textarea {
 .textodeporte {
   color: white;
   font-size: 16px;
+}
+
+/* ------------ MEDIAS------------------*/ /* ------------ MEDIAS------------------*/ /* ------------ MEDIAS------------------*/
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contenido {
+    grid-template-columns: 1fr;
+    color: red;
+  }
+  .contenedor-centrodepagina {
+    grid-template-columns: 1fr;
+    color: red;
+  }
+
+  /* ver porque no funciona*/
+  .contenedor-retratos {
+    grid-template-columns: 1fr;
+    color: red;
+  }
 }
