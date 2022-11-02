@@ -2,11 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: "Encode Sans Condensed", sans-serif;
 }
 
 .bodyIndex {
-  font-family: "Encode Sans Condensed", sans-serif;
   padding: 90px 0 0;
   margin: 0;
   background-image: url(../assets/img/ancas.jpg);
@@ -72,7 +74,6 @@ main {
 /* firma  = portfolio fotografico margen izquierdo del nav*/
 .firma {
   font-size: 30px;
-  font-family: "Encode Sans Condensed", sans-serif;
   padding: 0 40px;
   color: white;
   text-decoration: none;
@@ -215,7 +216,6 @@ main {
 /* HASTA ACA ESTILOS DEL INDEX*/ /* HASTA ACA ESTILOS DEL INDEX*/ /* HASTA ACA ESTILOS DEL INDEX*/ /* HASTA ACA ESTILOS DEL INDEX*/
 /* ESTILOS DE "RETRATOS.HTML:*/ /* ESTILOS DE "RETRATOS.HTML:*/ /* ESTILOS DE "RETRATOS.HTML:*/ /* ESTILOS DE "RETRATOS.HTML:*/
 .bodyretratos {
-  font-family: "Encode Sans Condensed", sans-serif;
   padding: 90px 0 0;
   margin: 0;
   background-image: url(../assets/img/camaraant.jpg!d);
@@ -239,38 +239,16 @@ main {
   border-radius: 15px;
   border: solid white 1px;
   background-image: url(../assets/img/retratooscuro.jpg);
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto;
-  justify-content: space-around;
+  background-size: 100%;
 }
 
-.foto1retratos {
-  width: 400px;
-  display: grid;
-  place-content: center;
+.foto-retratos {
+  width: 100%;
 }
-
-.foto2retratos {
-  width: 400px;
-  display: grid;
-  place-content: center;
+.foto-retratos img {
+  width: 100%;
 }
-
-.fotogringo {
-  width: 400px;
-}
-
-.fotogringo:hover {
-  transform: scale(1.11);
-  transition: 0.5s;
-}
-
-.fotorecibida {
-  width: 400px;
-}
-
-.fotorecibida:hover {
+.foto-retratos:hover {
   transform: scale(1.11);
   transition: 0.5s;
 }
@@ -278,7 +256,6 @@ main {
 .textoretratos {
   font-size: 16px;
   font-weight: 300;
-  font-family: "Encode Sans Condensed", sans-serif;
   color: white;
 }
 
@@ -287,13 +264,8 @@ main {
   transition: 0.5s;
 }
 
-.textocentralretratos {
-  width: 400px;
-}
-
 /* ESTILOS DE "contacto.HTML:*/ /* ESTILOS DE "contacto.HTML:*/ /* ESTILOS DE "contacto.HTML:*/ /* ESTILOS DE "contacto.HTML:*/ /* ESTILOS DE "contacto.HTML:*/
 .bodyContacto {
-  font-family: "Encode Sans Condensed", sans-serif;
   background-image: url(../assets/img/telefono3.jpg);
   background-attachment: fixed;
   background-size: 100vw 100vh;
@@ -316,7 +288,6 @@ main {
 
 /* ESTILOS DEL FORMULARIO:*/
 .formcontacto {
-  font-family: "Encode Sans Condensed", sans-serif;
   background-color: rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
   border-radius: 10px;
@@ -361,7 +332,6 @@ textarea {
 
 #botonenviar {
   background: white;
-  font-family: "Encode Sans Condensed", sans-serif;
   font-size: 20px;
   width: 100%;
   border-radius: 5px;
@@ -375,7 +345,6 @@ textarea {
 
 /* ESTILOS DEL MAPA:*/
 .mapa {
-  font-family: "Encode Sans Condensed", sans-serif;
   color: white;
   text-align: center;
   font-size: 15px;
@@ -399,7 +368,6 @@ textarea {
 
 /* ESTILOS DE FAUNA.HTML:*/ /* ESTILOS DE FAUNA.HTML:*/ /* ESTILOS DE FAUNA.HTML:*/ /* ESTILOS DE FAUNA.HTML:*/ /* ESTILOS DE FAUNA.HTML:*/
 .bodyfauna {
-  font-family: "Encode Sans Condensed", sans-serif;
   background-image: url(../assets/img/leona.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -445,7 +413,6 @@ textarea {
 }
 
 .textofauna {
-  font-family: "Encode Sans Condensed", sans-serif;
   color: white;
   text-align: justify;
   font-size: 20px;
@@ -453,7 +420,6 @@ textarea {
 
 /* ESTILOS DE deporte.HTML:*/ /* ESTILOS DE deporte.HTML:*/ /* ESTILOS DE deporte.HTML:*/ /* ESTILOS DE deporte.HTML:*/ /* ESTILOS DE deporte.HTML:*/
 .bodydeporte {
-  font-family: "Encode Sans Condensed", sans-serif;
   padding: 90px 0 0;
   margin: 0;
   background-image: url(../assets/img/camaraant.jpg!d);
@@ -476,22 +442,14 @@ textarea {
   background-color: black;
   display: flex;
   flex-direction: row;
-  column-gap: 20px;
   border: 1px solid white;
   justify-content: space-between;
   border-radius: 15px;
   padding: 20px;
 }
 
-.fotopolo1 {
-  height: 315px;
-  float: right;
-  margin-right: 30px;
-}
-
-.fotopolo1:hover {
-  transform: scale(1.11);
-  transition: 0.5s;
+.contenedorvideospolo iframe {
+  width: 100%;
 }
 
 .titulovideodeporte {
@@ -527,7 +485,7 @@ textarea {
   font-size: 16px;
 }
 
-/* ------------ MEDIAS------------------*/ /* ------------ MEDIAS------------------*/ /* ------------ MEDIAS------------------*/
+/* ------------ MEDIAS------------------*/
 @media (max-width: 480px) {
   form {
     width: 100%;
@@ -550,6 +508,14 @@ textarea {
   .contendorfauna {
     grid-template-columns: 1fr;
     color: red;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .foto-retratos {
+    width: 50%;
+  }
+  .maindeporte .foto-retratos {
+    width: 100%;
   }
 }
 
