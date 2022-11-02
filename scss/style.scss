@@ -1,0 +1,578 @@
+@import "colors";
+@import "fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family;
+}
+
+
+.bodyIndex {
+  font-family: $font-family;
+  padding: 90px 0 0;
+  margin: 0;
+  background-image: url(../assets/img/ancas.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+/* CARACTERISTICAS DE LA BARRA DE NAVEGACION Y SUS ELEMENTOS INTERACTIVOS:*/
+
+.header {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+main {
+  height: auto;
+  overflow-y: hidden;
+  margin-bottom: 100px;
+}
+
+.header-instagram {
+  width: 20px;
+  height: 20px;
+}
+
+.header-home {
+  width: 20px;
+  height: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav-menu {
+  margin-left: auto;
+}
+
+.nav-menu-link {
+  color: white;
+  text-decoration: none;
+}
+
+/* CHEQUEAR QUE ONDA ESTO PORQUE NO ME CIERRA, ES UN ESTILO SOBRE UNA CLASE QUE YA TRAE BOOSTRAP*/
+.container-fluid {
+  background-color: black;
+}
+/* CHEQUEAR QUE ONDA ESTO PORQUE NO ME CIERRA, ES UN ESTILO SOBRE UNA CLASE QUE YA TRAE BOOSTRAP*/
+
+/* firma  = portfolio fotografico margen izquierdo del nav*/
+
+.firma {
+  font-size: 30px;
+  font-family: $font-family;
+  padding: 0 40px;
+  color: white;
+  text-decoration: none;
+  line-height: 80px;
+}
+
+.firma:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  color: white;
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav-menu-item:hover {
+  transition: 0.5s;
+  color: white;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover {
+  background-color: black;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.navbar-toggler-icon {
+  background-color: white;
+}
+
+.navbar {
+  padding: 0;
+}
+/* por si agrego "controls" a la etiqueta audio:*/
+
+.audioindex {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+/* CARACTERISTICAS DEL DIV CENTRAL*/
+
+.contenedor-centrodepagina {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  margin-top: 60px;
+}
+
+.contenedor-centrodepagina:hover {
+  transform: scale(1.111);
+  transition: 0.5s;
+}
+
+.contenedor-centrodepagina img {
+  width: 250px;
+}
+
+.contenedor-centrodepagina {
+  p {
+    font-size: 19px;
+    font-weight: 300;
+    
+    &:hover {
+      transform: scale(0.99);
+      transition: 0.5s;
+    }
+  } 
+}
+
+
+.fotocentral:hover {
+  transform: scale(0.98);
+  transition: 0.5s;
+}
+
+.titulotextocentral {
+  color: white;
+}
+
+.subtitulotextocentral {
+  color: white;
+}
+
+.textocentral {
+  color: white;
+}
+/* APARICION DEL CUADRO CENTRAL DE MANERA PROGRASIVA:*/
+
+#animacioncentral {
+  animation: animacion-de-animacioncentral 5s;
+}
+
+@keyframes animacion-de-animacioncentral {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ESTILOS PARA LA BARRA FOOTER:*/
+
+.piedepagina {
+  background-color: black;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  margin-top: auto;
+}
+
+.fotofirmafooter {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 20px;
+  object-fit: contain;
+}
+
+.fotofirmafooter:hover {
+  transform: scale(1.11);
+  transition: 0.5s;
+}
+
+/* HASTA ACA ESTILOS DEL INDEX*/ /* HASTA ACA ESTILOS DEL INDEX*/ /* HASTA ACA ESTILOS DEL INDEX*/ /* HASTA ACA ESTILOS DEL INDEX*/
+/* HASTA ACA ESTILOS DEL INDEX*/ /* HASTA ACA ESTILOS DEL INDEX*/ /* HASTA ACA ESTILOS DEL INDEX*/ /* HASTA ACA ESTILOS DEL INDEX*/
+
+/* ESTILOS DE "RETRATOS.HTML:*/ /* ESTILOS DE "RETRATOS.HTML:*/ /* ESTILOS DE "RETRATOS.HTML:*/ /* ESTILOS DE "RETRATOS.HTML:*/
+
+.bodyretratos {
+  font-family: $font-family;
+  padding: 90px 0 0;
+  margin: 0;
+  background-image: url(../assets/img/camaraant.jpg!d);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.divretratoscentral {
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  margin-top: 80px;
+  border-radius: 15px;
+  border: solid white 1px;
+  background-image: url(../assets/img/retratooscuro.jpg);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  justify-content: space-around;
+}
+
+.foto1retratos {
+  width: 400px;
+  display: grid;
+  place-content: center;
+}
+
+.foto2retratos {
+  width: 400px;
+  display: grid;
+  place-content: center;
+}
+
+.fotogringo {
+  width: 400px;
+}
+
+.fotogringo:hover {
+  transform: scale(1.11);
+  transition: 0.5s;
+}
+
+.fotorecibida {
+  width: 400px;
+}
+
+.fotorecibida:hover {
+  transform: scale(1.11);
+  transition: 0.5s;
+}
+
+.textoretratos {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: $font-family;
+  color: white;
+}
+
+.textoretratos:hover {
+  transform: scale(1.11);
+  transition: 0.5s;
+}
+
+.textocentralretratos {
+  width: 400px;
+}
+
+/* ESTILOS DE "contacto.HTML:*/ /* ESTILOS DE "contacto.HTML:*/ /* ESTILOS DE "contacto.HTML:*/ /* ESTILOS DE "contacto.HTML:*/ /* ESTILOS DE "contacto.HTML:*/
+
+.bodyContacto {
+  font-family: $font-family;
+  background-image: url(../assets/img/telefono3.jpg);
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.contenedorcontacto {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 80px;
+}
+
+/* ESTILOS DEL FORMULARIO:*/
+
+.formcontacto {
+  font-family: $font-family;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 24px;
+  height: 100%;
+}
+
+.formcontacto input {
+  width: 100%;
+}
+
+.h2contacto {
+  color: white;
+  text-align: center;
+  margin: 0;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.cuadro {
+  padding-top: 3px;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 20px;
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+.imput {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+#botonenviar {
+  background: white;
+  font-family: $font-family;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#botonenviar:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+/* ESTILOS DEL MAPA:*/
+
+.mapa {
+  font-family: $font-family;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.mapa iframe {
+  width: 100%;
+}
+
+.textoencontrame {
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+/* ESTILOS DE FAUNA.HTML:*/ /* ESTILOS DE FAUNA.HTML:*/ /* ESTILOS DE FAUNA.HTML:*/ /* ESTILOS DE FAUNA.HTML:*/ /* ESTILOS DE FAUNA.HTML:*/
+
+.bodyfauna {
+  font-family: $font-family;
+  background-image: url(../assets/img/leona.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.contenedorfauna {
+  height: auto;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: auto auto;
+  position: relative;
+  justify-content: space-around;
+}
+
+.d-block {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fotos-carrusel {
+  width: 190px;
+}
+
+.carousel {
+  width: 250px;
+  height: 350px;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+#carouselExampleInterval {
+  top: 0;
+  left: 0;
+  border: 40px solid rgba(0, 0, 0, 0.4);
+}
+
+.textofauna {
+  font-family: $font-family;
+  color: white;
+  text-align: justify;
+  font-size: 20px;
+}
+
+/* ESTILOS DE deporte.HTML:*/ /* ESTILOS DE deporte.HTML:*/ /* ESTILOS DE deporte.HTML:*/ /* ESTILOS DE deporte.HTML:*/ /* ESTILOS DE deporte.HTML:*/
+
+.bodydeporte {
+  font-family: $font-family;
+  padding: 90px 0 0;
+  margin: 0;
+  background-image: url(../assets/img/camaraant.jpg!d);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.divdeportecentral {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  border: 1px solid white;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.fotopolo1 {
+  height: 315px;
+  float: right;
+  margin-right: 30px;
+}
+
+.fotopolo1:hover {
+  transform: scale(1.11);
+  transition: 0.5s;
+}
+
+.titulovideodeporte {
+  color: white;
+  font-size: 18px;
+}
+
+.contendorvideospolo {
+  display: flex;
+  flex-direction: column;
+}
+
+.videopolo {
+  height: 315px;
+}
+
+.videopolo2 {
+  height: 315px;
+}
+
+.titulodeporte {
+  color: white;
+  font-size: 18px;
+}
+
+.titulodeporte:hover {
+  transform: scale(1.11);
+  transition: 0.5s;
+}
+
+.textodeporte {
+  color: white;
+  font-size: 16px;
+}
+
+/* ------------ MEDIAS------------------*/ /* ------------ MEDIAS------------------*/ /* ------------ MEDIAS------------------*/
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contenido {
+    grid-template-columns: 1fr;
+    color: red;
+  }
+  .contenedor-centrodepagina {
+    grid-template-columns: 1fr;
+    color: red;
+  }
+
+  /* ver porque no funciona*/
+  .contenedor-retratos {
+    grid-template-columns: 1fr;
+    color: red;
+  }
+
+  .contendorfauna {
+    grid-template-columns: 1fr;
+    color: red;
+  }
+}
