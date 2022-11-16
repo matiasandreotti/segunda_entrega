@@ -142,11 +142,6 @@ main {
   margin-top: 60px;
 }
 
-.contenedor-centrodepagina:hover {
-  transform: scale(1.111);
-  transition: 0.5s;
-}
-
 .contenedor-centrodepagina img {
   width: 250px;
 }
@@ -239,7 +234,8 @@ main {
   border-radius: 15px;
   border: solid white 1px;
   background-image: url(../assets/img/retratooscuro.jpg);
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .foto-retratos {
@@ -438,7 +434,7 @@ textarea {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 90px;
+  margin-top: 45px;
   background-color: black;
   display: flex;
   flex-direction: row;
